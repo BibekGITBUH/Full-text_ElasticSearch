@@ -13,6 +13,8 @@
   <p><strong>Note:</strong></p>
   <p>To start:</p>
   <pre><code>npm run dev  // on backend folder</code></pre>
+  <pre><code>node syncAllToElastic.js  // on backend/src/utils  // sync to existing data of mongo db</code></pre>
+  
 
   <p>-Here I have used offline server-side Elasticsearch:</p>
   <ul>
