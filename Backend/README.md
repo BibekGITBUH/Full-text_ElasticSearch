@@ -38,6 +38,19 @@
   <p>For further Docker setup, you can refer to the official documentation of Docker and Elasticsearch.</p>
 
   <p><strong>Note:</strong> Other setups are same as usual Node.js project setup.</p>
-
+ 
+<h2> # For Cloud services of server side ElasticSearch</h2>
+  <p> - Replace :</p>
+  <code>const client = new Client({ node: 'http://localhost:9200' });
+</code>
+<p>By: example</p>
+  <code> const client = new Client({
+  node: 'https://your-cluster-id.region.cloud.es.io',
+  auth: {
+    username: 'elastic',
+    password: 'your_password'
+  }
+});
+</code>
 </body>
 </html>
